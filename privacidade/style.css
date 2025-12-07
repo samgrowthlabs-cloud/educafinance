@@ -1,0 +1,354 @@
+/* style.css - Página de Privacidade */
+
+/* ============================
+   PRIVACY HERO
+   ============================ */
+.privacy-hero {
+    padding: var(--space-2xl) 0;
+    background-color: var(--white);
+    position: relative;
+}
+
+.privacy-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gray-300), transparent);
+}
+
+.privacy-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.privacy-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--gray-500);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: var(--space-lg);
+    padding: 0.25rem 0.75rem;
+    border: 1px solid var(--gray-300);
+    border-radius: var(--radius-full);
+    background-color: var(--white);
+}
+
+.privacy-title {
+    font-size: 3.5rem;
+    margin-bottom: var(--space-sm);
+    line-height: 1.1;
+}
+
+.privacy-subtitle {
+    font-size: 1.25rem;
+    color: var(--gray-600);
+    margin-bottom: var(--space-md);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.last-update {
+    display: inline-block;
+    background-color: var(--gray-100);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-md);
+    font-size: 0.875rem;
+    color: var(--gray-600);
+}
+
+/* ============================
+   PRIVACY CONTENT
+   ============================ */
+.privacy-content {
+    padding: var(--space-2xl) 0;
+    background-color: var(--white);
+}
+
+.privacy-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto var(--space-2xl);
+}
+
+.privacy-lead {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--gray-600);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ============================
+   PRIVACY HIGHLIGHTS
+   ============================ */
+.privacy-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-lg);
+    margin-bottom: var(--space-2xl);
+}
+
+.highlight-card {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+}
+
+.highlight-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: var(--black);
+    transform: scaleX(0);
+    transition: transform var(--transition-normal);
+    transform-origin: left;
+}
+
+.highlight-card:hover {
+    border-color: var(--gray-300);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.highlight-card:hover::before {
+    transform: scaleX(1);
+}
+
+.highlight-number {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--gray-500);
+    margin-bottom: var(--space-sm);
+    letter-spacing: 1px;
+}
+
+.highlight-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-sm);
+    color: var(--black);
+}
+
+.highlight-card p {
+    color: var(--gray-600);
+    line-height: 1.6;
+    font-size: 0.9375rem;
+}
+
+/* ============================
+   PRIVACY DETAILS
+   ============================ */
+.privacy-details {
+    max-width: 800px;
+    margin: 0 auto var(--space-2xl);
+}
+
+.privacy-section {
+    margin-bottom: var(--space-xl);
+    padding-bottom: var(--space-xl);
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.privacy-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.section-header h3 {
+    font-size: 1.5rem;
+    color: var(--black);
+    margin: 0;
+}
+
+.section-line {
+    flex: 1;
+    height: 1px;
+    background-color: var(--gray-300);
+}
+
+.privacy-section p {
+    color: var(--gray-600);
+    line-height: 1.7;
+    margin-bottom: var(--space-md);
+}
+
+.privacy-list {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-md) 0;
+}
+
+.privacy-list li {
+    padding: var(--space-xs) 0;
+    color: var(--gray-600);
+    line-height: 1.6;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.privacy-list li:before {
+    content: "—";
+    color: var(--black);
+    position: absolute;
+    left: 0;
+    font-weight: 400;
+}
+
+.privacy-list li strong {
+    color: var(--black);
+    font-weight: 600;
+}
+
+/* ============================
+   PRIVACY CONTACT
+   ============================ */
+.privacy-contact {
+    text-align: center;
+    padding: var(--space-xl);
+    background-color: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    margin-top: var(--space-2xl);
+}
+
+.contact-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--gray-500);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: var(--space-lg);
+    padding: 0.25rem 0.75rem;
+    border: 1px solid var(--gray-300);
+    border-radius: var(--radius-full);
+    background-color: var(--white);
+}
+
+.contact-title {
+    font-size: 2rem;
+    margin-bottom: var(--space-sm);
+    color: var(--black);
+}
+
+.contact-text {
+    font-size: 1.125rem;
+    color: var(--gray-600);
+    margin-bottom: var(--space-lg);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-actions {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+}
+
+/* ============================
+   RESPONSIVIDADE
+   ============================ */
+@media (max-width: 768px) {
+    .privacy-title {
+        font-size: 2.5rem;
+    }
+    
+    .privacy-highlights {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-sm);
+    }
+    
+    .section-line {
+        width: 100%;
+    }
+    
+    .contact-actions {
+        flex-direction: column;
+    }
+    
+    .privacy-section {
+        padding: var(--space-lg);
+        background-color: var(--white);
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--gray-200);
+    }
+    
+    .privacy-section:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .privacy-title {
+        font-size: 2rem;
+    }
+    
+    .privacy-subtitle {
+        font-size: 1.125rem;
+    }
+    
+    .contact-title {
+        font-size: 1.75rem;
+    }
+    
+    .privacy-section {
+        padding: var(--space-md);
+    }
+    
+    .section-header h3 {
+        font-size: 1.25rem;
+    }
+}
+
+/* Remover CTAs complexos e simplificar */
+.privacy-contact {
+    text-align: center;
+    padding: var(--space-xl) 0;
+    border-top: 1px solid var(--gray-200);
+    margin-top: var(--space-xl);
+}
+
+.privacy-contact .contact-title {
+    font-size: 1.75rem;
+    margin-bottom: var(--space-md);
+    color: var(--black);
+}
+
+.privacy-contact .contact-actions {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .privacy-contact .contact-actions {
+        flex-direction: column;
+    }
+}
