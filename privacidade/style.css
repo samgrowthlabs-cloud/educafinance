@@ -1,0 +1,504 @@
+/* style.css - Página de Privacidade - Tema Preto */
+
+/* ============================
+   PRIVACY HERO
+   ============================ */
+.privacy-hero {
+    padding: var(--space-2xl) 0;
+    background-color: var(--black);
+    position: relative;
+}
+
+.privacy-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gray-300), transparent);
+}
+
+.privacy-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.privacy-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--gray-400);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: var(--space-lg);
+    padding: 0.25rem 0.75rem;
+    border: 1px solid var(--gray-300);
+    border-radius: var(--radius-full);
+    background-color: var(--gray-100);
+}
+
+.privacy-title {
+    font-size: 3rem;
+    margin-bottom: var(--space-sm);
+    line-height: 1.1;
+    color: var(--white);
+}
+
+.privacy-subtitle {
+    font-size: 1.25rem;
+    color: var(--gray-600);
+    margin-bottom: var(--space-md);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.last-update {
+    display: inline-block;
+    background-color: var(--gray-100);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-md);
+    font-size: 0.875rem;
+    color: var(--gray-600);
+}
+
+/* ============================
+   PRIVACY CONTENT
+   ============================ */
+.privacy-content {
+    padding: var(--space-2xl) 0;
+    background-color: var(--black);
+}
+
+.privacy-intro {
+    max-width: 800px;
+    margin: 0 auto var(--space-2xl);
+}
+
+.privacy-lead {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--gray-600);
+    text-align: center;
+}
+
+/* ============================
+   PRIVACY SECTIONS
+   ============================ */
+.privacy-section {
+    margin-bottom: var(--space-2xl);
+    padding-bottom: var(--space-2xl);
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.privacy-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: var(--space-lg);
+    color: var(--white);
+}
+
+.section-content {
+    color: var(--gray-600);
+    line-height: 1.7;
+}
+
+.section-content p {
+    margin-bottom: var(--space-md);
+    color: var(--gray-600);
+}
+
+/* ============================
+   DATA ITEMS
+   ============================ */
+.data-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-lg);
+    margin: var(--space-lg) 0;
+}
+
+.data-item {
+    background-color: var(--gray-100);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+/* REMOVIDO: .data-icon com emoji */
+.data-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-xs);
+    color: var(--white);
+    position: relative;
+    padding-left: 2.5rem;
+}
+
+.data-item h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2rem;
+    height: 2px;
+    background-color: var(--white);
+}
+
+.data-text p {
+    color: var(--gray-600);
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    margin: 0;
+    padding-left: 2.5rem;
+}
+
+/* ============================
+   USAGE POINTS
+   ============================ */
+.usage-points {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    margin: var(--space-lg) 0;
+}
+
+.usage-point {
+    display: flex;
+    gap: var(--space-lg);
+    align-items: flex-start;
+}
+
+.point-number {
+    width: 40px;
+    height: 40px;
+    background-color: var(--gray-100);
+    border: 2px solid var(--white);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--white);
+    flex-shrink: 0;
+}
+
+.point-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-xs);
+    color: var(--white);
+}
+
+.point-content p {
+    color: var(--gray-600);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.important-note {
+    background-color: var(--gray-100);
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+    margin-top: var(--space-lg);
+    border-left: 3px solid var(--white);
+}
+
+.important-note p {
+    color: var(--gray-600);
+    margin: 0;
+}
+
+.important-note strong {
+    color: var(--white);
+}
+
+/* ============================
+   WHATSAPP EXPLANATION
+   ============================ */
+.whatsapp-explanation {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-lg);
+    margin: var(--space-lg) 0;
+}
+
+.whatsapp-benefit {
+    background-color: var(--gray-100);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+}
+
+.whatsapp-benefit h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-sm);
+    color: var(--white);
+    position: relative;
+    padding-left: 2rem;
+}
+
+.whatsapp-benefit h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 1.5rem;
+    height: 2px;
+    background-color: var(--white);
+}
+
+.whatsapp-benefit p {
+    color: var(--gray-600);
+    line-height: 1.6;
+    margin: 0;
+    padding-left: 2rem;
+}
+
+/* ============================
+   PROTECTION POINTS
+   ============================ */
+.protection-points {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-lg);
+    margin: var(--space-lg) 0;
+}
+
+.protection-point {
+    background-color: var(--gray-100);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+}
+
+.protection-point h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-sm);
+    color: var(--white);
+    position: relative;
+    padding-left: 2rem;
+}
+
+.protection-point h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 1.5rem;
+    height: 2px;
+    background-color: var(--white);
+}
+
+.protection-point p {
+    color: var(--gray-600);
+    line-height: 1.6;
+    margin: 0;
+    padding-left: 2rem;
+}
+
+/* ============================
+   LGPD COMPLIANCE
+   ============================ */
+.lgpd-list {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-lg) 0;
+}
+
+.lgpd-list li {
+    padding: var(--space-sm) 0;
+    color: var(--gray-600);
+    line-height: 1.6;
+    position: relative;
+    padding-left: 2rem;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.lgpd-list li:before {
+    content: "✓";
+    color: var(--white);
+    position: absolute;
+    left: 0;
+    font-weight: 600;
+}
+
+.rights-section {
+    margin-top: var(--space-xl);
+}
+
+.rights-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-md);
+    color: var(--white);
+}
+
+.rights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
+}
+
+.right-card {
+    background-color: var(--gray-100);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+}
+
+.right-card h4 {
+    font-size: 1.125rem;
+    margin-bottom: var(--space-sm);
+    color: var(--white);
+    position: relative;
+    padding-left: 2rem;
+}
+
+.right-card h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 1.5rem;
+    height: 2px;
+    background-color: var(--white);
+}
+
+.right-card p {
+    color: var(--gray-600);
+    line-height: 1.6;
+    margin: 0;
+    padding-left: 2rem;
+}
+
+/* ============================
+   PRIVACY FINAL
+   ============================ */
+.privacy-final {
+    background-color: var(--gray-100);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    margin-top: var(--space-2xl);
+}
+
+.final-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-md);
+    color: var(--white);
+}
+
+.final-content p {
+    color: var(--gray-600);
+    line-height: 1.7;
+    margin-bottom: var(--space-md);
+}
+
+.final-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* ============================
+   RESPONSIVIDADE
+   ============================ */
+@media (max-width: 768px) {
+    .privacy-title {
+        font-size: 2.5rem;
+    }
+    
+    .data-items {
+        grid-template-columns: 1fr;
+    }
+    
+    .whatsapp-explanation {
+        grid-template-columns: 1fr;
+    }
+    
+    .protection-points {
+        grid-template-columns: 1fr;
+    }
+    
+    .rights-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .usage-point {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+    
+    .point-number {
+        align-self: flex-start;
+    }
+    
+    .data-item {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--space-sm);
+    }
+    
+    .data-item h3,
+    .data-text p,
+    .whatsapp-benefit h3,
+    .whatsapp-benefit p,
+    .protection-point h3,
+    .protection-point p,
+    .right-card h4,
+    .right-card p {
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    .data-item h3::before,
+    .whatsapp-benefit h3::before,
+    .protection-point h3::before,
+    .right-card h4::before {
+        left: 50%;
+        transform: translateX(-50%);
+        top: -1rem;
+    }
+    
+    .data-text p {
+        padding-top: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .privacy-title {
+        font-size: 2rem;
+    }
+    
+    .privacy-subtitle {
+        font-size: 1.125rem;
+    }
+    
+    .data-item h3::before,
+    .whatsapp-benefit h3::before,
+    .protection-point h3::before,
+    .right-card h4::before {
+        width: 1rem;
+    }
+    
+    .privacy-final {
+        padding: var(--space-lg);
+    }
+    
+    .lgpd-list li {
+        padding-left: 1.5rem;
+    }
+}

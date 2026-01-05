@@ -1,0 +1,526 @@
+/* style.css - Página de Solicitação de Acesso - Tema Preto */
+
+/* ============================
+   ACCESS HERO
+   ============================ */
+.access-hero {
+    padding: var(--space-2xl) 0;
+    background-color: var(--black);
+    position: relative;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.access-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gray-300), transparent);
+}
+
+.access-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.access-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--gray-400);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: var(--space-lg);
+    padding: 0.25rem 0.75rem;
+    border: 1px solid var(--gray-300);
+    border-radius: var(--radius-full);
+    background-color: var(--gray-100);
+}
+
+.access-title {
+    font-size: 3rem;
+    margin-bottom: var(--space-md);
+    line-height: 1.1;
+    color: var(--white);
+}
+
+.access-subtitle {
+    font-size: 1.25rem;
+    color: var(--gray-600);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* ============================
+   ACCESS SECTION
+   ============================ */
+.access-section {
+    padding: var(--space-2xl) 0;
+    background-color: var(--black);
+}
+
+/* Info Box */
+.info-box {
+    display: flex;
+    gap: var(--space-md);
+    padding: var(--space-lg);
+    background-color: var(--gray-100);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-xl);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    background-color: var(--gray-50);
+    border: 1px solid var(--gray-300);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.info-content {
+    flex: 1;
+}
+
+.info-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-sm);
+    color: var(--white);
+}
+
+.info-content p {
+    color: var(--gray-600);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Form Container */
+.form-container {
+    max-width: 800px;
+    margin: 0 auto var(--space-2xl);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+}
+
+.form-title {
+    font-size: 2rem;
+    margin-bottom: var(--space-sm);
+    color: var(--white);
+}
+
+.form-subtitle {
+    font-size: 1.125rem;
+    color: var(--gray-600);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Form Fields */
+.access-form {
+    background-color: var(--gray-100);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: var(--space-xs);
+    display: flex;
+    flex-direction: column;
+}
+
+.label-note {
+    font-size: 0.8125rem;
+    font-weight: 400;
+    color: var(--gray-500);
+    margin-top: 2px;
+}
+
+.form-control {
+    padding: 0.875rem 1rem;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    color: var(--white);
+    background-color: var(--gray-50);
+    border: 1px solid var(--gray-300);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+    outline: none;
+}
+
+.form-control:focus {
+    border-color: var(--white);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+    background-color: var(--gray-100);
+}
+
+.form-control::placeholder {
+    color: var(--gray-400);
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-hint {
+    font-size: 0.8125rem;
+    color: var(--gray-500);
+    margin-top: var(--space-xs);
+    font-style: italic;
+}
+
+/* Privacy Agreement */
+.privacy-agreement {
+    background-color: var(--gray-50);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.agreement-content {
+    margin-bottom: var(--space-lg);
+}
+
+.agreement-title {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-sm);
+    color: var(--white);
+}
+
+.agreement-text {
+    color: var(--gray-600);
+    margin-bottom: var(--space-sm);
+}
+
+.agreement-list {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-md) 0;
+}
+
+.agreement-list li {
+    padding: var(--space-xs) 0;
+    color: var(--gray-600);
+    line-height: 1.6;
+    position: relative;
+    padding-left: 1.5rem;
+    font-size: 0.9375rem;
+}
+
+.agreement-list li:before {
+    content: "✓";
+    color: var(--white);
+    font-weight: 600;
+    position: absolute;
+    left: 0;
+}
+
+.privacy-link {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid var(--gray-400);
+}
+
+.privacy-link:hover {
+    text-decoration: none;
+    border-bottom-color: var(--white);
+}
+
+/* Checkbox Group */
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-sm);
+}
+
+.checkbox-input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    cursor: pointer;
+    font-size: 0.9375rem;
+    color: var(--gray-700);
+    line-height: 1.6;
+}
+
+.checkbox-custom {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    background-color: var(--gray-50);
+    border: 2px solid var(--gray-400);
+    border-radius: var(--radius-sm);
+    position: relative;
+    transition: all var(--transition-fast);
+    margin-top: 2px;
+}
+
+.checkbox-input:checked + .checkbox-label .checkbox-custom {
+    background-color: var(--white);
+    border-color: var(--white);
+}
+
+.checkbox-input:checked + .checkbox-label .checkbox-custom::after {
+    content: "✓";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--black);
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.checkbox-input:focus + .checkbox-label .checkbox-custom {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+}
+
+.checkbox-text {
+    flex: 1;
+}
+
+.privacy-link-inline {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid var(--gray-400);
+}
+
+.privacy-link-inline:hover {
+    text-decoration: none;
+    border-bottom-color: var(--white);
+}
+
+/* Form Actions */
+.form-actions {
+    margin-top: var(--space-xl);
+}
+
+.btn-block {
+    width: 100%;
+    justify-content: center;
+}
+
+.button-text {
+    margin-right: var(--space-xs);
+}
+
+.button-icon {
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+.form-note {
+    margin-top: var(--space-lg);
+    padding: var(--space-md);
+    background-color: var(--gray-50);
+    border-radius: var(--radius-md);
+    border-left: 3px solid var(--white);
+}
+
+.form-note p {
+    margin-bottom: var(--space-xs);
+    color: var(--gray-600);
+    line-height: 1.6;
+}
+
+.form-note strong {
+    color: var(--white);
+}
+
+.note-small {
+    font-size: 0.875rem;
+    color: var(--gray-500);
+    font-style: italic;
+}
+
+/* Important Info */
+.important-info {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--space-lg);
+    background-color: var(--gray-100);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+}
+
+.important-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+}
+
+.important-icon {
+    font-size: 1.5rem;
+}
+
+.important-header h3 {
+    font-size: 1.25rem;
+    color: var(--white);
+    margin: 0;
+}
+
+.important-content p {
+    color: var(--gray-600);
+    margin-bottom: var(--space-sm);
+}
+
+.important-list {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-md) 0 0;
+}
+
+.important-list li {
+    padding: var(--space-sm) 0;
+    color: var(--gray-600);
+    line-height: 1.6;
+    font-size: 0.9375rem;
+    border-bottom: 1px solid var(--gray-200);
+    position: relative;
+    padding-left: 2rem;
+}
+
+.important-list li:last-child {
+    border-bottom: none;
+}
+
+.important-list li:before {
+    content: "!";
+    width: 20px;
+    height: 20px;
+    background-color: var(--gray-50);
+    border: 1px solid var(--gray-300);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--white);
+    position: absolute;
+    left: 0;
+    top: 1rem;
+}
+
+.important-list li strong {
+    color: var(--white);
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+/* ============================
+   RESPONSIVIDADE
+   ============================ */
+@media (max-width: 768px) {
+    .access-title {
+        font-size: 2.5rem;
+    }
+    
+    .access-form {
+        padding: var(--space-lg);
+    }
+    
+    .info-box {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--space-md);
+    }
+    
+    .info-icon {
+        align-self: center;
+    }
+    
+    .form-title {
+        font-size: 1.75rem;
+    }
+    
+    .form-subtitle {
+        font-size: 1rem;
+    }
+    
+    .checkbox-label {
+        font-size: 0.875rem;
+    }
+    
+    .important-list li {
+        padding-left: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .access-title {
+        font-size: 2rem;
+    }
+    
+    .access-subtitle {
+        font-size: 1.125rem;
+    }
+    
+    .access-form {
+        padding: var(--space-md);
+    }
+    
+    .form-header {
+        margin-bottom: var(--space-lg);
+    }
+    
+    .form-title {
+        font-size: 1.5rem;
+    }
+    
+    .agreement-title {
+        font-size: 1.125rem;
+    }
+    
+    .privacy-agreement {
+        padding: var(--space-md);
+    }
+    
+    .important-info {
+        padding: var(--space-md);
+    }
+}

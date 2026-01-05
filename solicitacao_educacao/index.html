@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Acesso | EducaFinance</title>
+    <meta name="description" content="Solicite acesso ao EducaFinance e inicie sua jornada de educação financeira consciente.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>EF</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <div class="main-logo">
+                        <span class="samgrowth">SAMGROWTHLABS</span>
+                        <span class="divider">/</span>
+                        <span class="educafinance">EducaFinance</span>
+                    </div>
+                    <p class="tagline">Educação financeira real, sem atalhos</p>
+                </div>
+                
+                <nav class="nav">
+                    <button class="menu-toggle" aria-label="Abrir menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    
+                    <ul class="nav-list">
+                        <li><a href="/" class="nav-link">Home</a></li>
+                        <li><a href="/como_funciona/" class="nav-link">Como Funciona</a></li>
+                        <li><a href="/privacidade/" class="nav-link">Privacidade</a></li>
+                        <li><a href="/solicitacao_educacao/" class="nav-link active">Solicitar Acesso</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="access-hero">
+            <div class="container">
+                <div class="access-hero-content">
+                    <div class="access-badge">Início da Jornada</div>
+                    <h1 class="access-title">Solicite Seu Acesso ao EducaFinance</h1>
+                    <p class="access-subtitle">Preencha os dados abaixo para iniciar sua jornada de educação financeira consciente</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="access-section">
+            <div class="container">
+                <!-- Informative Box -->
+                <div class="info-box">
+                    <div class="info-icon">📚</div>
+                    <div class="info-content">
+                        <h3>Processo Simples e Seguro</h3>
+                        <p>Seus dados serão utilizados apenas para identificação e comunicação via WhatsApp. Não armazenamos informações sensíveis no site e não compartilhamos dados com terceiros.</p>
+                    </div>
+                </div>
+
+                <!-- Form Section -->
+                <div class="form-container">
+                    <form id="accessForm" class="access-form">
+                        <div class="form-header">
+                            <h2 class="form-title">Dados para Cadastro</h2>
+                            <p class="form-subtitle">Informações necessárias para iniciar sua educação financeira</p>
+                        </div>
+
+                        <div class="form-fields">
+                            <!-- Nome -->
+                            <div class="form-group">
+                                <label for="nome" class="form-label">
+                                    Nome Completo *
+                                    <span class="label-note">Como gostaria de ser chamado(a)</span>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="nome" 
+                                    name="nome" 
+                                    required 
+                                    class="form-control"
+                                    placeholder="Seu nome completo"
+                                    autocomplete="name"
+                                >
+                            </div>
+
+                            <!-- CPF -->
+                            <div class="form-group">
+                                <label for="cpf" class="form-label">
+                                    CPF *
+                                    <span class="label-note">Apenas números, sem pontos ou traços</span>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="cpf" 
+                                    name="cpf" 
+                                    required 
+                                    class="form-control"
+                                    placeholder="00000000000"
+                                    inputmode="numeric"
+                                    pattern="[0-9]{11}"
+                                    title="Digite os 11 números do CPF"
+                                >
+                                <div class="form-hint">Informe apenas os 11 dígitos do seu CPF</div>
+                            </div>
+
+                            <!-- Telefone -->
+                            <div class="form-group">
+                                <label for="telefone" class="form-label">
+                                    Telefone com WhatsApp *
+                                    <span class="label-note">Número ativo com WhatsApp para comunicação</span>
+                                </label>
+                                <input 
+                                    type="tel" 
+                                    id="telefone" 
+                                    name="telefone" 
+                                    required 
+                                    class="form-control"
+                                    placeholder="(44) 98845-6344"
+                                    inputmode="tel"
+                                >
+                                <div class="form-hint">Este número será usado para contato exclusivo via WhatsApp</div>
+                            </div>
+
+                            <!-- Objetivo -->
+                            <div class="form-group">
+                                <label for="objetivo" class="form-label">
+                                    Qual seu principal objetivo com educação financeira? *
+                                    <span class="label-note">Conte brevemente o que busca aprender</span>
+                                </label>
+                                <textarea 
+                                    id="objetivo" 
+                                    name="objetivo" 
+                                    required 
+                                    class="form-control"
+                                    rows="4"
+                                    placeholder="Ex: Quero aprender a organizar minhas finanças, entender melhor sobre dinheiro, planejar meu futuro financeiro, etc."
+                                ></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Privacy Agreement -->
+                        <div class="privacy-agreement">
+                            <div class="agreement-content">
+                                <h3 class="agreement-title">Concordo com os Termos</h3>
+                                <p class="agreement-text">
+                                    Ao enviar este formulário, confirmo que:
+                                </p>
+                                <ul class="agreement-list">
+                                    <li>Forneci informações verdadeiras e completas</li>
+                                    <li>Autorizo o contato via WhatsApp no número informado</li>
+                                    <li>Concordo com a <a href="/privacidade/" target="_blank" class="privacy-link">Política de Privacidade</a> do EducaFinance</li>
+                                    <li>Entendo que este é um projeto educacional, não de assessoria financeira</li>
+                                    <li>Compreendo que o EducaFinance ensina conceitos, mas não toma decisões por mim</li>
+                                </ul>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <input 
+                                    type="checkbox" 
+                                    id="aceitoPolitica" 
+                                    name="aceitoPolitica" 
+                                    required
+                                    class="checkbox-input"
+                                >
+                                <label for="aceitoPolitica" class="checkbox-label">
+                                    <span class="checkbox-custom"></span>
+                                    <span class="checkbox-text">
+                                        Sim, eu li e concordo com a 
+                                        <a href="/privacidade/" target="_blank" class="privacy-link-inline">Política de Privacidade</a> 
+                                        e autorizo o tratamento dos meus dados para fins educacionais.
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Form Actions -->
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-large btn-block" id="submitButton">
+                                <span class="button-text">Enviar Solicitação e Ir para WhatsApp</span>
+                                <span class="button-icon">→</span>
+                            </button>
+                            
+                            <div class="form-note">
+                                <p>
+                                    <strong>Próximo passo:</strong> Você será redirecionado para nosso WhatsApp 
+                                    para confirmarmos seu cadastro e iniciarmos sua jornada educacional.
+                                </p>
+                                <p class="note-small">
+                                    Todo o acompanhamento será feito via WhatsApp, garantindo comunicação direta e pessoal.
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Important Information -->
+                <div class="important-info">
+                    <div class="important-header">
+                        <div class="important-icon">⚠️</div>
+                        <h3>Informações Importantes</h3>
+                    </div>
+                    <div class="important-content">
+                        <p>Antes de solicitar acesso, leia atentamente:</p>
+                        <ul class="important-list">
+                            <li><strong>Educação, não assessoria:</strong> Ensinamos conceitos, não damos recomendações financeiras</li>
+                            <li><strong>Sem promessas:</strong> Não garantimos ganhos ou resultados financeiros</li>
+                            <li><strong>Processo contínuo:</strong> Aprendizado acontece ao longo do tempo, não da noite para o dia</li>
+                            <li><strong>Responsabilidade pessoal:</strong> Cada pessoa é responsável por suas próprias decisões</li>
+                            <li><strong>Compromisso ético:</strong> Seguimos princípios de transparência e honestidade</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="sam">SAMGROWTHLABS</span>
+                        <span class="slash">/</span>
+                        <span class="edu">EducaFinance</span>
+                    </div>
+                    <p class="footer-tagline">Educação financeira consciente e responsável</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="/" class="footer-link">Home</a>
+                    <a href="/como_funciona/" class="footer-link">Como Funciona</a>
+                    <a href="/privacidade/" class="footer-link">Privacidade</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>© 2026 EducaFinance by SAMGROWTHLABS. Conteúdo educativo. Não constitui recomendação financeira.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
